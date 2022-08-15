@@ -1,8 +1,6 @@
 import tensorflow as tf
 
 # check version
-
-tf.logging.set_verbosity(tf.logging.ERROR)
 print('Using TensorFlow version', tf.__version__)
 
 # import dataset
@@ -16,7 +14,7 @@ from tensorflow.keras.datasets import mnist
 
 # plot example
 
-from matplotlib import pyplot as plot
+from matplotlib import pyplot as plt
 plt.imshow(x_train[0], cmap = 'binary')
 plt.show()
 
@@ -28,7 +26,7 @@ y_test_encoded = to_categorical(y_test)
 
 # preprocessing
 
-import numpy as numpy
+import numpy as np
 x_train_reshaped = np.reshape(x_train, (60000, 784))
 x_test_reshaped = np.reshape(x_test, (10000, 784))
 
