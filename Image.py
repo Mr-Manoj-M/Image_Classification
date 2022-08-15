@@ -52,7 +52,7 @@ from tensorflow.keras.layers import Dense
 model = Sequential([
 	Dense(128, activation='relu', input_shape=(784,)),
 	Dense(128, activation='relu'), 
-	Dense(128, activation='softmax')
+	Dense(10, activation='softmax')
 	])
 
 model.compile(
