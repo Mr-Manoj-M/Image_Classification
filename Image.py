@@ -30,7 +30,7 @@ y_test_encoded = to_categorical(y_test)
 
 import numpy as numpy
 x_train_reshaped = np.reshape(x_train, (60000, 784))
-x_train_reshaped = np.reshape(x_test, (10000, 784))
+x_test_reshaped = np.reshape(x_test, (10000, 784))
 
 # display pixel values
 # print(set(x_train_reshaped[0]))
